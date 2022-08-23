@@ -1,0 +1,35 @@
+#ejercicio 9
+#Escriba un programa pida la cantidad de segundos y devuelva en horas, minutos y segundos correspondientes.
+
+segundos = int(input("Ingrese la cantidad de segundos: "))
+
+minutos = segundos / 60
+horas = minutos / 60
+
+print("Los minutos son: " + str(minutos))
+
+print("Las horas son " + str(horas))
+
+
+#Ejercicio 16
+#. Escriba un programa que le solicite al usuario ingresar una fecha formada por 8 números, donde los primeros dos representan el día, los siguientes dos el mes y los últimos cuatro el año (DDMMAAAA). Este dato debe guardarse en una variable con tipo int (número entero). Finalmente, mostrar al usuario la fecha con el formato DD / MM / AAAA. Ejemplo de ejecución: Fecha en formato DDMMAAAA: 03092021 03 / 09 / 2021
+
+fecha = input("Ingrese una fecha en formato DDMMAAAA: ")
+
+dia = fecha[0:2]
+mes = fecha[2:4]
+anio  = fecha[4:]
+
+nuevaFecha = dia + "/" + mes + "/" + anio
+
+print(nuevaFecha)
+
+#Ejercicio 19
+#. Empleando slicing Imprima cada palabra de la siguiente frase: Que el 2022 sea un mundo maravilloso y sostenible”, en una línea aparte.
+
+texto = "Que el 2022 sea un mundo maravilloso y sostenible"
+
+text = texto.split(" ")
+
+for x in text:
+  print(x)
