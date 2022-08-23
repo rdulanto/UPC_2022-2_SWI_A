@@ -1,0 +1,55 @@
+#Listas: almacenar mas de un elemento en una variable
+
+miLista = ["manzana", "platano","fresa","pera","pera"]
+
+#imprimiendo los valores de una lista
+print(miLista)
+#contando elementos de una lista
+print(len(miLista))
+
+otraLista = [15,20,35,10]
+print(otraLista)
+
+print(type(otraLista))
+
+listaValores = ["Ricardo", "Dulanto", 38, "Lima", True]
+
+print(listaValores)
+print(type(listaValores))
+
+#Obteniendo valores especificos de la lista
+
+print(listaValores[0])
+print(listaValores[2])
+print(listaValores[-1])
+print(listaValores[0:3])
+print(listaValores[2:])
+print(listaValores[:3])
+
+if "Ricardo" in listaValores:
+  print("Si, Ricardo esta en la lista")
+
+if "Paola" in listaValores:
+  print("Si, Paola esta en la lista")
+
+listaValores[2] = 39
+
+print(listaValores)
+
+listaValores[0:2] = ["Martin", "Ramirez"]
+
+
+# agregar valores a lista en un indice determinado
+print(listaValores)
+
+listaValores.insert(0,"Ricardo")
+
+#agrega un valor a la lista en la ultima posición
+listaValores.append("Peru")
+print(listaValores)
+
+#Remover un valor de la lista
+listaValores.remove("Martin")
+print(listaValores)
+
+listaValores.pop(1)
