@@ -1,0 +1,30 @@
+num1 = 99
+
+while num1 > 0:
+  print(num1)
+  if num1 == 45:
+    print("ok, llegaste a la mitad")
+    #break;
+  num1 -= 2
+else:
+  print("es menor que cero")
+
+#-----------
+
+#Usando For
+
+personas = ["Ricardo", "Ana", "Jose", "Paola", "Lorena"]
+
+print(personas)
+
+for nombre in personas:
+  
+  if nombre == "Jose":
+    break
+  print(nombre)
+  for letra in nombre:
+    print(letra)
+
+
+for num1 in range(99,0,-2):
+  print(num1)
