@@ -1,0 +1,86 @@
+#Ejercicio 1
+
+#diccionario monedas
+monedas = {'Euro':'E','Dolar':'$','Yen':'Y'}
+moneda = input("Ingresa la divisa: ")
+
+
+if moneda.title() in monedas:
+  print(monedas[moneda.title()])
+else:
+  print("La divisa no se encuentra")
+
+#Ejercicio 2
+
+nombre = input("¿Cuál es tu nombre? ")
+edad = input("¿Cuál es tu edad? ")
+direccion = input("¿Donde vives? ")
+telefono = input("¿Cual es tu numero telefonico? ")
+
+#diccionario persona
+persona = {'nombre: ':nombre,'edad: ':edad,'direccion: ':direccion,'telefono: ': telefono}
+
+print(persona['nombre: '], ' tiene ', persona['edad: '], ' años, vive en ', persona['direccion: '], ' y su numero de telefono es ', persona['telefono: '])
+
+
+#Ejercicio 3
+
+#diccionario de fruta
+
+frutas = {'Platano':1.35, 'Manzana':0.8, 'Pera':0.85, 'Naranja':0.7}
+
+fruta = input('¿Que fruta quieres?').title()
+
+kilos = float(input('¿Cuántos kilos quieres?'))
+
+if fruta in frutas:
+  print(kilos, ' kilos de ', fruta, ' valen ', frutas[fruta]*kilos, ' soles'  )
+else:
+  print("No se encontro la fruta: ", fruta)
+
+
+#Ejercicio 4
+
+#diccionario de meses del año
+
+meses = {1:'Enero',2:'Febrero',3:'Marzo',4:'Abril',5:'Mayo',6:'Junio',7:'Julio',8:'Agosto',9:'Setiembre',10:'Octubre',11:'Noviembre',12:'Diciembre'}
+
+fecha = input('Introduce una fecha en el formato dd/mm/aaaa: ')
+
+fecha = fecha.split('/')
+
+#2 de Setiembre del 2022
+
+print(fecha[0], ' de ', meses[int(fecha[1])], ' del ', fecha[2])
+
+
+#Ejercicio 5
+
+#diccionario cursos
+
+cursos = {'Matemáticas': 6, 'Física': 4, 'Química': 5}
+
+total_creditos = 0
+
+for asignatura, creditos in cursos.items():
+  print(asignatura, ' tiene ', creditos, ' creditos.')
+  total_creditos += creditos
+
+print('El total de creditos es: ', total_creditos)
+
+
+
+#Ejercicio 6
+
+#diccionario persona
+
+persona = {}
+
+continuar = True
+
+while continuar:
+  item = input('¿Que dato quieres agregar?')
+  valor = input(item + ': ')
+  persona[item] = valor
+  print(persona)
+  continuar = input("¿Quieres agregar otro elemento (Si/No)?") == 'Si'
