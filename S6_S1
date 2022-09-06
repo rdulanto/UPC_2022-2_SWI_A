@@ -1,0 +1,109 @@
+#ej1
+
+#Funciones
+#Crear la función saludo
+
+def saludo():
+  print("!Hola a todos!")
+  return
+
+saludo()
+
+#ej15
+
+def cuentaPalabras(oracion):
+  
+  return {palabra:len(palabra) for palabra in oracion.split()}
+
+word = input("ingresa una frase")
+
+print(cuentaPalabras(word))
+
+#ej3
+def square(sample):
+
+  list = []
+  for i in sample:
+    list.append(i**2)
+  return list
+
+def statistics(sample):
+
+  stat = {}
+  stat['media']= sum(sample)/len(sample)  
+  stat['varianza']=sum(square(sample))/len(sample)-stat['media']**2
+  stat['desviacion tipica'] = stat['varianza']**0.5
+  return stat
+  
+print(statistics([1,2,3,4,5]))
+print(statistics([2.3,5.7,6.8,9.7,12.1,15.6]))
+
+#ej6
+
+def media(listaN):  
+  m = sum(listaN)/len(listaN)
+  return m
+
+print(media([2,4,6,8,5]))
+
+#ej4
+def factura(monto, iva=21):
+  calcular = monto + ((monto * iva))/100
+  return calcular
+
+print("El monto total",factura(1000,18))
+
+
+print("El monto total",factura(1000))
+
+
+#ej3
+#funcion del factorial
+
+def factorial(n):
+  ini = 1
+  for i in range(n):
+    ini *= (i+1)
+  return ini
+
+resultado = factorial(3)
+
+print(resultado)
+
+
+#Ej5
+#funcion que calcule el area del circulo
+"""
+  p*radio*radio
+  p*radio**2
+"""
+#funcion que calcule el volumen del cilindro
+"""
+  (p*radio**2)*h
+"""
+
+def areaCirculo(r):
+  pi = 3.1416
+  area = pi * r **2
+  return area
+
+def volumenCilindro(r, h):
+  vol = areaCirculo(r) * h
+  return vol
+
+resultado = volumenCilindro(6,10)
+
+print(resultado)
+
+
+
+#Ej7
+def cuadrado(listaC):
+  list = []
+  for i in listaC:
+    list.append(i**2)
+  return list
+print(cuadrado([1,3,5,6]))
+
+
+
