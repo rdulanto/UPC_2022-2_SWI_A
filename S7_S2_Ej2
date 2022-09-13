@@ -1,0 +1,24 @@
+"""
+  Crea un programa donde se solicite el nombre de una persona y su numero dni. Solicita los datos hasta que el usuario indique lo contrario. No ingresar nombres repetidos.
+"""
+personas = {}
+salir = False
+
+while(not salir):
+
+  nombre= input("Ingresa un nombre: ")
+  dni = input("Ingresa el dni: ")
+
+  if (nombre not in personas):
+    personas[nombre]:dni
+    print("Persona ingresada")
+  else:
+    print("Persona repetida")
+
+  respuesta= input("¿Quieres salir (S/N)?")
+
+  if(respuesta == "S"):
+    salir = True
+
+print(personas)
+  
