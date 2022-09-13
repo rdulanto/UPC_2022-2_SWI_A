@@ -10,15 +10,16 @@ while(not salir):
   dni = input("Ingresa el dni: ")
 
   if (nombre not in personas):
-    personas[nombre]:dni
+    personas[nombre]=dni
     print("Persona ingresada")
   else:
     print("Persona repetida")
 
   respuesta= input("¿Quieres salir (S/N)?")
 
-  if(respuesta == "S"):
+  if(respuesta.upper() == "S"):
     salir = True
+
 
 print(personas)
   
