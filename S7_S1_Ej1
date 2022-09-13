@@ -1,0 +1,18 @@
+# pide numeros y metelos en una lista, cuando el usuario ingrese un 0 ya dejaremos de insertar. Por ultimo, muestra los numeros ordenados de menor a mayor
+import random
+numeros = []
+#salir = False
+fin = 1
+while(fin<=25):
+  #numero = int(input("Ingresa un numero: "))
+  numero = random.randint(1,100)
+  #if (numero == 0):
+  #  salir = True
+  #else:
+  numeros.append(numero)
+  fin +=1
+
+numeros.sort()
+
+for e in range(len(numeros)):
+  print("El valor ",e+1," es : ",numeros[e])
