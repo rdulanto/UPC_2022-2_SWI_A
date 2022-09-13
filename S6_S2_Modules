@@ -1,0 +1,71 @@
+import miArchivo as a
+import datetime as d
+import math as m
+
+miNombre = a.persona["nombre"]
+
+a.miSaludo(miNombre)
+
+"""
+  Funciones de fecha
+  file: datetime
+"""
+
+fecha = d.datetime.now()
+print("La fecha actual es ",fecha)
+
+fecha = d.datetime.now()
+print("El año actual es ",fecha.year)
+
+fecha = d.datetime.now()
+print("El mes actual es ",fecha.month)
+
+fecha = d.datetime.now()
+print("El dia actual es ",fecha.day)
+
+
+#Funciones matematicas
+
+numeros = [2,5,7]
+menor = min(numeros)
+mayor = max(numeros)
+
+print("El menor numero es: ", menor)
+
+print("El mayor numero es:", mayor)
+
+absoluto = abs(-458)
+print("el valor absoluto es ", absoluto)
+
+cuadrado = pow(3,2)
+print(cuadrado)
+
+raiz = m.sqrt(64)
+print(raiz)
+
+
+
+pi = m.pi
+print("El valor de pi es: ", pi)
+
+
+"""
+  Manejo de errores
+  try
+  except 
+  else 
+  finally
+"""
+
+try:
+  print(a.miSaludo("Fabiana"))
+
+except:
+  print("Hubo un error")
+
+else:
+  print("No hubo ningun error")
+
+finally:
+  print("Finalmente termino el programa")
+
